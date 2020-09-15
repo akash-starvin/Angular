@@ -1,0 +1,10 @@
+@mixin my-div($flag) {
+    @if $flag {
+        background-color: blue;
+    } @else {
+        background-color: red;
+    }
+}
+div{
+    @include my-div(false);
+}
